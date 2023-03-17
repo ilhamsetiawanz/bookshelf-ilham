@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/asset/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/style/style.css">
+    <title>Avalon Library</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <nav>
+            <a href="index.html"><img src="./asset/img/icon.png" alt="Logo" class="logo_img"></a>
+            <div class="nav_container">
+                <a href="./asset/page/library.html" class="nav_item">My Library</a>
+                <a href="#" class="nav_item">Coming Soon!</a>
+                <a href="#" class="nav_item">Coming Soon!</a>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="/asset/img/libbanner.png" alt="">
+        </div>
+    </header>
+    <main class="mainContainer">
+        <div class="itemContainer">
+            <h2>MY BOOK DATA</h2>
+            <section id="newbooks" class="newbook">
+                <h2 class="headers">Masukan Buku Baru</h2>
+                <form id="addBooks">
+                    <div class="input">
+                        <label for="book_title">Nama Buku</label>
+                        <input type="text" id="book_title" name="book_title" required>
+                    </div>
+                    <div class="input">
+                        <label for="book_owner">Penulis</label>
+                        <input type="text" id="book_owner" name="book_owner" required>
+                    </div>
+                    <div class="input">
+                        <label for="book_years">Tahun</label>
+                        <input type="number" id="book_years" name="book_years" min="1900" max="2099" required>
+                    </div>
+                    <div class="input">
+                        <label for="genre">Genre</label>
+                        <select name="genre" id="genre">
+                            <option value="none"disable>Pilih Genre</option>
+                            <option value="Horor">Horor</option>
+                            <option value="Fantasi">Fantasi</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Biography">Biography</option>
+                            <option value="Filsafat">Filsafat</option>
+                            <option value="Journal">Journal</option>
+                        </select>
+                    </div>
+
+                    <div class="input_chek">
+                        <label for="selesaiBaca">Sudah Dibaca</label>
+                        <input type="checkbox" name="selesaiBaca" id="selesaiBaca">
+                    </div>
+
+                    <button onclick="add()" type="submit" id="tambahBuku">Tambah Buku</button>
+                </form>
+            </section>
+    
+            <section class="book_shelf">
+                <h2 class="headers">Belum Selesai Dibaca</h2>
+                <div id="notFinishList" class="list_buku"></div>
+            </section>
+
+            <section class="book_shelf">
+                <h2 class="headers">Selesai Dibaca</h2>
+                <div id="finishList" class="list_buku"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Made With ❤️ From Ilham Setiawan</p>
+    </footer>
+
+    <script src="./asset/app/app.js"></script>
+</body>
+</html>

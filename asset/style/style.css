@@ -1,0 +1,322 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+body{
+    height: auto;
+    width: 100%;
+}
+
+.banner > img{
+    width: 100%;
+}
+
+nav{
+    background-color: #251749;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5em;
+
+    height: 5em;
+    width: 100%;
+}
+
+.logo_img{
+    width: 4rem;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    flex-wrap: wrap;
+}
+
+.nav_item{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+
+    font-size: 1rem;
+}
+
+section{
+    width: 40rem;
+    margin-bottom: 15px;
+}
+
+.headers{
+    font: size 24px;
+    color: #251749;
+    text-align: center;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.itemContainer > h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #251749;
+    margin-bottom: 2rem;
+}
+
+.newbook, .searchBooks{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.newbook > form > .input{
+    margin: 10px 0;
+}
+
+.newbook > form > .input > input, select{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.newbook >form > .input >label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #251749;
+}
+
+.newbook > form > .input_chek{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.newbook > form > .input_chek > label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #251749;
+}
+
+.newbook > form > .input_check > input{
+    accent-color: #251749;
+    font-size: 16px;
+}
+.newbook > form > button{
+    width: 100%;
+    padding: 7px;
+    background-color: #251749;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf{
+    margin: 16px 0 0 0;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.book_shelf > .list_buku{
+    padding: 16px;
+}
+
+.book_shelf > .list_buku > .bukuKu{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    gap: 15px;
+}
+
+.bukuKu > img{
+    width: 100px;
+}
+
+.bukuKu > .text_container{
+    width: 45%;
+}
+
+.bukuKu > .button_container{
+    display: flex;
+    gap: 10px;
+}
+
+.button_status{
+    padding: 8px 5px;
+    background-color: #2B7A0B;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_delete{
+    padding: 8px 5px;
+    background-color: #E21818;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.book_shelf > .list_buku >.bukuKu > h3, p{
+    margin: 5px 0;
+}
+
+p.text_tag{
+    color: #3C4048;
+    font-size: 14px;
+}
+
+.libContainer{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.libContainer >h2{
+    text-align: center;
+    color: #251749;
+}
+
+#allBook {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+    padding: 4em 3em;
+  }
+  
+
+.mybooks{
+    width: auto;
+   padding: 1rem 0.5rem;
+
+   border: 1px solid #000;
+   display: flex;
+   flex-direction: column;
+}
+
+.mybooks > .text_container{
+    padding: 0 0 0 1rem;
+}
+.mybooks > img{
+    width: 90%;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+
+footer{
+    background-color: #251749;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+}
+
+
+@media screen and (min-width :320px) and (max-width: 480px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .nav_container{
+        display: flex;
+        justify-content: space-between;
+        width: 78%;
+        gap: 5px;
+    }
+    .nav_item{
+        font-size: 60%;
+    }
+
+    .logo_img{
+        height: 40px;
+        width: auto;
+    }
+
+    .mainContainer{
+        display: block;
+    }
+
+    .newbook, .book_shelf{
+        display: block;
+        width: 100%;
+    }
+
+    .list_buku{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        width: auto;
+    }
+
+    .bukuKu{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bukuKu > img{
+        width: 60%;
+    }
+
+    .libContainer{
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .libContainer > h2{
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    #allBook{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 30px 20px;
+    }
+
+    .text_container >h3{
+        font-size: 16px;
+        color: #251749;
+    }
+
+    .text_container > p{
+        font-size: 12px;
+        color: #ababab;
+    }
+    footer{
+        height: 40px;
+        width: 100%;
+        font-size: 8px;
+        position: sticky;
+    }
+}
