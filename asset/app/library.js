@@ -1,4 +1,5 @@
 const myBooks = document.getElementById('allBook');
+const loveBtn = document.querySelector('.myBtn_love');
 
 function showBooks() {
     const bookCover = {
@@ -28,9 +29,14 @@ function showBooks() {
                 <p class="text_tag">${book.penulis}</p>
                 <p class="text_tag">${book.tahun}</p>
                 <p class="text_tag">${book.genre}</p>
+                <button class ="myBtn_love">❤️</button>
             </div>
         `;
-        allBook.appendChild(bukuKu);
+
+
+        if (book.isRead === true){
+            allBook.appendChild(bukuKu);
+        };
     });
 };
 
