@@ -1,5 +1,4 @@
 const myBooks = document.getElementById('allBook');
-const loveBtn = document.querySelector('.myBtn_love');
 
 function showBooks() {
     const bookCover = {
@@ -29,7 +28,7 @@ function showBooks() {
                 <p class="text_tag">${book.penulis}</p>
                 <p class="text_tag">${book.tahun}</p>
                 <p class="text_tag">${book.genre}</p>
-                <button class ="myBtn_love">❤️</button>
+                <button class ="myBtn_love" onclick="love()">❤️<span id="myLove"></span></button>
             </div>
         `;
 
@@ -38,6 +37,11 @@ function showBooks() {
             allBook.appendChild(bukuKu);
         };
     });
+};
+
+
+function love(){
+    document.getElementById('myLove').innerText++;
 };
 
 document.addEventListener('DOMContentLoaded', showBooks);
